@@ -1,0 +1,102 @@
+* {
+	font-family: "Outfit", sans-serif;
+	font-weight: 400;
+}
+:root {
+	--softblue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	background-color: hsl(217, 54%, 11%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#card {
+	margin: 10%;
+	border-radius: 10px;
+	background-color: hsl(216, 50%, 16%);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	width: 20vw;
+}
+#eth-img {
+	border-radius: 10px;
+	width: 100%;
+}
+#img-container {
+	position: relative;
+}
+
+#img-hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0, 255, 255, 0.5);
+	border-radius: 1em;
+}
+#eye-icon {
+	display: flex;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.softblue {
+	color: var(--softblue);
+}
+.eth {
+	color: var(--cyan);
+}
+.icons {
+	display: flex;
+	justify-content: space-between;
+}
+hr {
+	border: none;
+	height: 1px;
+	background-color: hsl(215, 32%, 27%);
+}
+footer img {
+	width: 5%;
+	height: 5%;
+	min-width: 25px;
+	min-height: 25px;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin-right: 5%;
+}
+
+.hover-cyan {
+	text-decoration: none;
+	color: var(--white);
+	font-weight: 300;
+	cursor: pointer;
+}
+.hover-cyan:hover {
+	color: var(--cyan);
+}
+#img-hover:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+footer {
+	display: flex;
+	align-items: center;
+}
+footer a {
+	margin-left: 5px;
+}
+@media screen and (max-width: 375px) {
+	#card {
+		width: 80vw;
+		margin-top: 15vh;
+	}
+}
